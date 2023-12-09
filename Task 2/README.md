@@ -16,7 +16,7 @@ and display the class name on the face class bounding box on 4 videos.
 - The pre-trained model used is yolov8m-cls.pt was used to train the Emotion classification.
 
 # Program:
-- The python program task2_1.py was created to detect faces and also to classify those faces on video input.
+- The Python program task2_1.py was created to detect faces and also to classify those faces on video input.
 - First, the faces were detected in each frame using the custom face detection model i.e. yolov8_face.pt.
 - Then using the bounding boxes found cropped image was sent through the image classification model i.e. yolov8_emotion_classification.pt.
 - The result of the classification is printed on the bounding boxes. 
