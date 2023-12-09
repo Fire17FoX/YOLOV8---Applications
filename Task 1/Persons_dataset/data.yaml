@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['Person dataset - v1 2023-11-16 1-49am']
+
+roboflow:
+  workspace: tank-detect
+  project: person-dataset-kzsop
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/tank-detect/person-dataset-kzsop/dataset/4
