@@ -10,11 +10,11 @@ model2 = YOLO('yolov8_emotion_classification.pt')
 
 #results = model1.track(source='3.mp4', \
 #save=True, show=False, project='./result', conf=0.5, classes=1)
-cap = cv2.VideoCapture("1.mp4")
+cap = cv2.VideoCapture("/video/path/")
 fps = int(cap.get(cv2.CAP_PROP_FPS))
 width, height = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # Use 'XVID' for AVI format
-output_video = cv2.VideoWriter("1result.mp4", fourcc, fps, (width, height))
+output_video = cv2.VideoWriter("Output.mp4", fourcc, fps, (width, height))
 while True:
         success, img = cap.read()
         result1=model1(img,stream=True)
