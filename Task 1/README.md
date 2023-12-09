@@ -35,4 +35,4 @@ The pre-trained model used is yolov8n.pt
 # Challenges Faced: 
 - Local GPU was not sufficient to train.
 # Solutions:
-- Used Google Collab to train the model then exported the weight file to the local machine.
+- Used Google Collab to train the model and then exported the weight file to the local machine.
